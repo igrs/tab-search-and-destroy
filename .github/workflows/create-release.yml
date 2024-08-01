@@ -1,4 +1,4 @@
-name: Create Release
+name: Create Extension Release
 on:
   push:
     tags:
