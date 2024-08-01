@@ -27,3 +27,5 @@ jobs:
         with:
           files: tab-search-and-destroy-${{ github.ref_name }}.zip
           generate_release_notes: true
+env:
+  GITHUB_TOKEN: ${{ secrets.WORK_FLOW_PAT }}
