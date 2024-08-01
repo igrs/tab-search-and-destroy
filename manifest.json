@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Tab index chrome extension",
+    "name": "Tab Search & Destroy",
+    "description": "This Tab Search & Destroy is the perfect Chrome Extension for those who open too many tabs. You can filter tabs by search and instantly navigate! Unwanted tabs can also be deleted! Get a comfortable browsing experience with this Extension!",
     "version": "0.0.1",
     "action": {
         "default_popup": "index.html"
@@ -8,9 +9,6 @@
     "permissions": [
         "tabs"
     ],
-    "chrome_url_overrides": {
-        "newtab": "index.html"
-    },
     "icons": {
         "48": "icon48.png",
         "128": "icon128.png"
