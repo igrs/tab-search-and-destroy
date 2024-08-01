@@ -2,7 +2,7 @@ name: Create Extension Release
 on:
   push:
     tags:
-      - 'v*'  # タグ名のパターンを指定。v1.0のようなタグにマッチ
+      - 'v*.*.*'
 permissions:
   contents: write
 jobs:
