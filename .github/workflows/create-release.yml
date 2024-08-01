@@ -1,9 +1,8 @@
 name: Create Extension Release
 on:
-  workflow_dispatch:
   push:
     tags:
-      - 'v*'
+      - 'v*'  # タグ名のパターンを指定。v1.0のようなタグにマッチ
 permissions:
   contents: write
 jobs:
