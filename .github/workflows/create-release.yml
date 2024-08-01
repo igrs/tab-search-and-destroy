@@ -1,5 +1,6 @@
 name: Create Extension Release
 on:
+  workflow_dispatch:
   push:
     tags:
       - 'v*'
@@ -21,3 +22,8 @@ jobs:
           npm run build
           mv dist tab-search-and-destroy
           zip -r tab-search-and-destroy-${{ github.ref_name }}.zip tab-search-and-destroy
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: tab-search-and-destroy-${{ github.ref_name }}.zip
+          generate_release_notes: true
