@@ -1,8 +1,5 @@
 name: Create Extension Release
 on:
-  push:
-    tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+-[a-zA-Z]*'
   workflow_dispatch:
 permissions:
   contents: write
@@ -27,5 +24,3 @@ jobs:
         with:
           files: tab-search-and-destroy-${{ github.ref_name }}.zip
           generate_release_notes: true
-env:
-  GITHUB_TOKEN: ${{ secrets.WORK_FLOW_PAT }}
